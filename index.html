@@ -9,13 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> HS SpaceApps Challenge | NYC </title>
+    <title> HS SpaceApps | NYC </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 
     <!-- Custom Fonts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -75,6 +77,7 @@
         </div>
         <!-- /.container -->
     </nav>
+    <div id="containertop">
    	<div class="player">
          <video autoplay loop muted = "muted">
             <source src="https://d3ga7i2xn81pzq.cloudfront.net/images/earth_video.webm" type="video/webm">
@@ -82,8 +85,9 @@
          </video>
     </div>
    
-    <div class="LogoContainer"> <div class="rester"></div><div class="centerLOGO"> <img src="img/LOGO.gif" /></div></div>
-    
+    <div class="TopContainer"> <div class="rester"></div><div class="centerLOGO"> <img class="center" src="spaceapps_03.png" width="350px" height="412px" /> <H2 class="textcenter"> a highschool hackathon like no other</H2>  <h3 class="textcenter">  LEARN. CODE. CHANGE THE WORLD.</h3> <button href="#register">  Register </button></div>
+        </div> 
+    </div>
     <!-- Intro Header -->
 <!--<header class="intro">
        <div class="intro-body">
@@ -105,6 +109,8 @@
     </header>
 -->
     <!-- About Section -->
+    
+<div id="bottomcontainer">
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -119,7 +125,7 @@
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
         <div class="download-section">
-            <div class="container">
+            <div class="container register">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Download Grayscale</h2>
                     <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
@@ -151,7 +157,7 @@
             </div>
         </div>
     </section>
-
+   
     <!-- Map Section -->
     <div id="map"></div>
 
@@ -176,7 +182,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-
+    </div>
 </body>
 
 </html>
