@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> HS SpaceApps | NYC </title>
+
+    <!-- Bootstrap Core CSS -->
+
+
+    <!-- Custom Fonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+            body {
+              margin: 0;
+              background: #000; 
+            }
+            video { 
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -100;
+                transform: translateX(-50%) translateY(-50%);
+             background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+              background-size: cover;
+              transition: 1s opacity;
+            }
+            .stopfade { 
+               opacity: .5;
+            }
+
+            #polina { 
+              font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+              font-weight:100; 
+              background: rgba(0,0,0,0.3);
+              color: white;
+              padding: 2rem;
+              margin: auto;
+              width: 60%;
+              font-size: 1.2rem;
+            }
+            h1 {
+              font-size: 3rem;
+              text-transform: uppercase;
+              margin-top: 0;
+              letter-spacing: .3rem;
+            }
+            #polina button { 
+              display: block;
+              width: 80%;
+              padding: .4rem;
+              border: none; 
+              margin: 1rem auto; 
+              font-size: 1.3rem;
+              background: rgba(255,255,255,0.23);
+              color: #fff;
+              border-radius: 3px; 
+              cursor: pointer;
+              transition: .3s background;
+            }
+            #polina button:hover { 
+               background: rgba(0,0,0,0.5);
+            }
+
+            a {
+              display: inline-block;
+              color: #fff;
+              text-decoration: none;
+              background:rgba(0,0,0,0.5);
+              padding: .5rem;
+              transition: .6s background; 
+            }
+            a:hover{
+              background:rgba(0,0,0,0.9);
+            }
+            @media screen and (max-width: 500px) { 
+              div{width:70%;} 
+            }
+            @media screen and (max-device-width: 800px) {
+              html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+              #bgvid { display: none; }
+            }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+ 
+
+        
+        
+        <video autoplay poster="RANDOM WEBSTIE POSTER *****()()(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)" loop muted = "muted">
+            <source src="https://d3ga7i2xn81pzq.cloudfront.net/images/earth_video.webm" type="video/webm">
+            <source src="https://d3ga7i2xn81pzq.cloudfront.net/images/earth_video.mp4" type="video/mp4">
+         </video>
+        
+        
+        
+        <div id="polina">
+        <h1>Polina</h1>
+        <p>filmed by Alexander Wagner 2011
+        <p><a href="//demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+        <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+        <button>Pause</button>
+        </div>
