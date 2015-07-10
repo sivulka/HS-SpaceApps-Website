@@ -54,14 +54,11 @@ p {
 
 
 #faq {
-  color: #fff;
-  background-color: #222322; }
+  color: #fff;}
   #faq .container {
     text-align: center; }
     #faq .container .q-container {
-      width: 30%;
-      margin: 0 1%;
-      margin-bottom: 2%;
+      width: 100%;
       display: inline-block;
       vertical-align: top; }
       #faq .container .q-container .title {
@@ -307,8 +304,6 @@ a:focus {
 .backpic{
 
  background: url(../img/satellite.jpg) no-repeat center center scroll;   
-
-border-top:1px solid rgba(0,0,0,0.9); border-bottom:1px solid rgba(0,0,0,0.9);
     
     
 }
@@ -477,7 +472,7 @@ img::-moz-selection {
 
             .container {
               max-width: 1200px;
-              width: 92%;
+              width: 100%;
               margin: 0px auto;
               position: relative;
             align-content: center;
