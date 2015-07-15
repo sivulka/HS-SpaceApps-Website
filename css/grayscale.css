@@ -741,18 +741,18 @@ footer h1{
             }
 
             @media screen and (max-height: 900) {
-                .centerLOGO{zoom:80%}
+                .centerLOGO{zoom:75%}
             }
 
             @media screen and (max-width: 550px) {
                 .centerLOGO{zoom:70%;}
-                body{zoom:80%;}
+                body{zoom:75%;}
                 #faq{zoom:75%;}
             }
 
             @media screen and (max-device-height: 800px) {
                 .centerLOGO{zoom:60%;}
-                body{zoom:80%;}
+                body{zoom:75%;}
                 #faq{zoom:75%;}
             }
 
