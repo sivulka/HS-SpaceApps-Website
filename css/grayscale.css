@@ -773,23 +773,29 @@ footer h1{
 
             @media screen and (max-device-width: 800px) {
                { background: url(../img/MobileSplash.jpg) #000 no-repeat center center fixed; }
-              #bgvid { display: none; }
+              video { display: none; }
+                  .backpic{background: #000;
             }
 
             @media screen and (max-height: 900) {
                 .centerLOGO{zoom:80%}
+                  .backpic{background: #000;}
+                  video { display: none; }
             }
 
             @media screen and (max-width: 550px) {
                 .centerLOGO{zoom:70%;}
                 body{zoom:80%;}
                 #faq{zoom:75%;}
-            }
+                .backpic{background: #000;}
+                  video { display: none; }}
 
             @media screen and (max-device-height: 800px) {
                 .centerLOGO{zoom:60%;}
+                  .backpic{background: #000;}
                 body{zoom:80%;}
                 #faq{zoom:75%;}
+                  video { display: none; }
             }
 
 
