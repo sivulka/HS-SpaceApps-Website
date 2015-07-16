@@ -472,19 +472,25 @@ footer h1{
               margin: 0;
               background: #000; 
             }
-            video { 
-                position: fixed;
-       
-                min-width: 100%;
-                min-height: 100%;
-                width: auto;
-                height: auto;
-                z-index: -100;
-                transform: translateX(-50%) translateY(-50%);
-                background: url(../img/MobileSplash.jpg) no-repeat;
-                background-size: cover;
-                transition: 1s opacity;
-            }
+video {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg) no-repeat;
+background-size: cover;
+-webkit-transition: 1s opacity;
+transition: 1s opacity;
+}
+user agent stylesheetvideo {
+object-fit: contain;
+}
             .stopfade { 
                opacity: .5;
             }
