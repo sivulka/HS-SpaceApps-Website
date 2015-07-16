@@ -844,7 +844,7 @@ footer h1{
      
  
 @media screen and (max-width: 550px) {
-                .centerLOGO{zoom:70%;}
+                .centerLOGO{zoom:60%;}
                 body{zoom:80%;}
                 #faq{zoom:75%;}
                 .backpic{background: #000;}
@@ -855,7 +855,7 @@ footer h1{
  @media screen and (min-device-width:551) and(  max-device-width: 800px) {
                { background: url(../img/MobileSplash.jpg) #000 no-repeat center center fixed; }
               video { display: none; }
-              .backpic{background: #000;
+           .backpic{background: #000;}
                   .centerLOGO{zoom:70%;}
                 body{zoom:80%;}
                 #faq{zoom:75%;}
