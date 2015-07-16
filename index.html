@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/path/to/parallax.js"></script>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,10 +35,10 @@
     <![endif]-->
     
 
-    <SCRIPT language "JavaScript"> /*
-        if (screen.height<= 899) {document.write("<style>.centerLOGO{zoom:75%;}</style>")};*/ 
+    <SCRIPT language "JavaScript"> 
+        if (screen.height<= 1000) {document.write("<style>.centerLOGO{zoom:75%;} .player{zoom:75%;}</style>")}; 
         if (screen.width<= 550) {document.write("<style>.centerLOGO{zoom:70%;} body{zoom:82%} video{display: none;}</style>")};
-
+        if (screen.width<= 1000) {document.write("<style>.centerLOGO{zoom:75%;} .player{zoom:75%;}</style>")}; 
         if (screen.width>= 2500) {document.write("<style>body{zoom:150%;}</style>")};
         
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -97,7 +97,7 @@
          </video>
  
    
-    <div class="TopContainer"> <div class="rester"></div><div class="centerLOGO"> <img class="center" src="spaceapps_04.png" width="350px" height="350px" /> <H2 class="textcenter"> a highschool hackathon out of this world</H2>  <h3 class="textcenter">  LEARN. CODE. CHANGE THE WORLD.</h3> <button href="#register">  Register </button></div>
+    <div class="TopContainer"> <div class="rester"></div><div class="centerLOGO"> <img class="center" src="spaceapps_04.png" width="350px" height="350px" /> <H2 class="textcenter"> a highschool hackathon out of this world</H2>  <h3 class="textcenter">  LEARN. CODE. CHANGE THE WORLD.</h3> <a class="btn">  Register </a></div>
         </div> 
     </div>
     <!-- Intro Header -->
@@ -254,9 +254,9 @@
 
 <section id="bottom">
     
-    <div>
+    <div class="">
 
-    <h2 class="text-center"> Stay Tuned! </h2>   
+    <h3 class="text-center bottom"> Stay Tuned! </h3>   
    
    
    

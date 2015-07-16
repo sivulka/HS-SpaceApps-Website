@@ -30,6 +30,16 @@ h6 {
     letter-spacing: 1px;
 }
 
+h3.bottom{
+    margin: 100px 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+    
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -311,7 +321,7 @@ a:focus {
 
 #sponsors{
     
- padding-top: 100px;   
+ padding-top: ;   
     
     
 }
@@ -376,14 +386,36 @@ padding-top:20px;
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+.btn {
     border: 1px solid white;
     color: white;
-    background-color: transparent;
-}
+    background-color: transparent;       width:250px;  height:auto;  margin-right: auto;   margin-left: auto; 
 
-.btn-default:hover,
-.btn-default:focus {
+  width: 250px;
+  height: auto;
+  padding: 10px 23px;
+  border: 1px solid white;
+  background: rgba(43,43,43,0.1);
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 35px auto;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+  font-family: 'Roboto Condensed', sans-serif;}
+
+.btn:hover,
+.btn:focus {
     border: 1px solid white;
     outline: 0;
     color: #000;
@@ -394,10 +426,15 @@ padding-top:20px;
 
 footer {
     padding: 50px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+   border-top: 1px solid white
+       ;
+  background: #121212;
 }
 
 footer p {
-    margin: 0;
+    margin-left: 20%;
+    margin-right:20%;
 }
 
 ::-moz-selection {
@@ -485,7 +522,6 @@ footer h1{
             #polina button:hover { 
                background: rgba(0,0,0,0.5);
             }
-
 
 
 
@@ -913,13 +949,15 @@ footer {
 width:100%;
 
 }
+.top{
 
+
+margin-top:100px}
 
 .inner{
     
- width:80%;
- margin: 0px auto;
-    
+
+
     
     
     
@@ -929,6 +967,7 @@ width:100%;
     font-size: 20px;
 }
 footer{ position:absolute;
+      background: #121212;
 width:100%;}
 /*
             @media screen and (min-width: 
@@ -942,12 +981,17 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 
+section{
+margin-top:80px !important;
+margin-bottom:80px !important;
+    
+    
+    
+    
+    
+}
 #bottom{
-margin-top:80px;
-margin-bottom:80px;
     
-    
-    
-    
+ margin-top:80px;   
     
 }
