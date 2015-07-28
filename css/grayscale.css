@@ -314,6 +314,29 @@ a:focus {
     }
 }
 
+
+
+.row{
+
+    display: inline-block;
+        font-size:20px;
+
+        line-height: 1.42857143;
+    
+}
+.row a{
+    
+    
+
+    
+}
+
+.socials{
+ margin:5px;   
+    
+    
+    
+}
 .content-section {
     padding-top: 100px;
 }
@@ -924,7 +947,19 @@ footer h2{
 .cf {
     *zoom: 1;
 }
+.margin-top{
+    margin-top:10%
+    
+    
+    
+    
+}
 
+#rules-title{
+ font-size: 60px;
+    
+    
+}
 footer {
   border-top: 1px solid #111111;
   background: #121212;
