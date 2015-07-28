@@ -352,7 +352,7 @@ a:focus {
 .backpic{
 
  background: url(../img/satellite1.jpg) no-repeat center center scroll;   
-    
+    background-size:cover;
     
 }
 
