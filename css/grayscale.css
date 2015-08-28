@@ -810,10 +810,31 @@ object-fit: contain;
           
       }
 
+.round{
+    
+    
+    
+    
+    border-radius: 100px;
+    
+}
+
+.sbot{
+
+margin-bottom: 10px;
+}
+
+.smtop{
+   margin-top:20px; 
+    
+    
+}
 
 
+.mw{
 
 
+max-width: 100%;}
 
 
 /*
