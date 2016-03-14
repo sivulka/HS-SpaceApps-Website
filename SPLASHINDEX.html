@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<!--
+
+                         7  IIIIIIIIIIIIIIIIIIIIIII7  7                         
+                     7  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII 7                       
+                   77IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII77                    
+                  IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII                   
+               7IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII7               
+            7 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII7              
+           7IIIIIIIIIIIIIIIIII?...?IIIIIIIII+...IIIIIIIIIIIII~IIIII7            
+          IIIIIIIIIIIIIIII=.=IIIIIIIIIIIIIIIIIIIII..IIIIIIIIII+.IIIII           
+       77IIIIIIIIIIIIII?.IIIIIIIIIIIIIIIIIIIIIIIIIIII?.I.:I+.III~IIIII7         
+        IIIIIIIIIIIII..IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII..:III.?IIIIIIII7        
+       IIIIIIIIIIII=.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII~III.?II.IIIIIIIII 7      
+     7IIIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIII..IIIIIIIIIII7      
+    7IIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII..?,..=IIIIIIIIIII7     
+   7IIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIIIIIIIIII     
+   IIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIIIIIIIIII    
+  IIIIIIIIIII.IIIIIIII?IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIIIIIIIIII7  
+ 7IIIIIIIIII.IIIIIIIII===I==I?IIII=+==?II=II=III=II??I===IIIIIIIII:IIIIIIIIII   
+ IIIIIIIIIII?IIIIIIIII=I=IIII==?II=I===?=I=I=III===?=?=I=IIIIIIIII~IIIIIIIIIII7 
+7IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII 
+IIIIIIIII..III?++?IIIII+?IIII+.,III++++?IIIIII++IIII+++IIII+++IIIII?..IIIIIIIII 
+IIIIIII=.~+.?I:.....II~..III..I..II....:IIIIII..IIII.....II.....?I..I..IIIIIIII 
+IIIIIII..II.:I:.II:.II...III.:II.II.~IIIIIIIII...III..II.:I..II..I..II.IIIIIIII7
+IIIIIII..II.:I:.II:.II.,.III.:II.II.~IIIIIIIII...III..II.:I..II..I..II.IIIIIIIII
+IIIIIII:.IIIII:.II..II.I.III.:IIIII.~IIIIIIII~.I.III..II.:I..II..I..IIIIIIIIIIII
+IIIIIIII..,III:.....II.I.,II.:IIIII....IIIIII..I.III.....II.....III..IIIIIIIIIII
+IIIIIIIIII..II:.IIIII..I..II.:IIIII.~IIIIIIII..I.+II..IIIII..IIIIIII,..IIIIIIIII
+IIIIIII..II.,I:.IIIII..I..II.:II.II.~IIIIIIII.II..II..IIIII..IIIII..II.IIIIIIII 
+IIIIIII..II..I:.IIIII.~I+.II.:II.II.~IIIIIIII.II..II..IIIII..IIIII..II.+IIIIIII 
+IIIIIII..II..I:.IIIII.+++.II.:II.II.~IIIIIII..++..II..IIIII..IIIII..II.+IIIIIII 
+IIIIIII?....?I:.IIII~.III..I..,..II.....IIII..III.II..IIIII..IIIII..:..IIIIIIII 
+ IIIIIIIIIIIIIIIIIIIIIIIIIIIII+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII+IIIIIIIII  
+ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  
+ 7IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII   
+  IIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII~=IIIIIIIIIII   
+  7IIIIIIIIIII.IIIIIIIIIII==I=I=IIII=IIII==I=I=I==I==IIIIIIIIIII,IIIIIIIIIII    
+    IIIIIIIIIII.IIIIIIIIII=II=I=I==I=IIII=II=I=I=??=IIIIIIIIII:,IIIIIIIIIII     
+    7IIIIIIIIIII?.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIIIIIIIIIII7     
+     7IIIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII?.IIIIIIIIIIII7      
+       IIIIIIIIIIIII.IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIIIIIIIIIIII        
+        IIIIIIIIIIIIII.I?IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII.IIIIIIIIIIIIII7        
+         IIIIIIIIIIIIIII..IIIIIIIIIIIIIIIIIIIIIIIIIII..IIIIIIIIIIIIIII7         
+        7 IIIIIIIIIIIIIIIII..+IIIIIIIIIIIIIIIIIII,.,IIIIIIIIIIIIIIIII           
+            IIIIIIIIIIIIIIIIIIII....+IIIII=....IIIIIIIIIIIIIIIIIIII77           
+             7IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII7              
+               7IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII                
+                 7IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII                   
+                   77IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII7                     
+                        IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII                         
+                          7 IIIIIIIIIIIIIIIIIIIIIII7                            
+                                77  7IIIII77                           GEORGE SIVULKA WAS HERE         
+                                                                 
+
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Space Apps Next Gen | NYC </title>
+    
+    <!-- Dat OG Kontent-->
+    <meta property="og:title" content="Space Apps Next Gen NYC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://spaceappsnextgen.com/" />
+    <meta property="og:image" content="http://www.spaceappsnextgen.com/logo.png" />
+    <meta property="og:description" content="Learn to use code and data to solve global challenges. It doesn't matter if you have never programmed before, this is one of the the best places to get started! No experience needed. Register now!" />
+    <meta property="og:site_name" content="Space Apps Next Gen NYC" />
+    <meta property="fb:admins" content="" />
+    <link rel="shortcut icon" href="/favicon.ico" />    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <SCRIPT language "JavaScript"> /*
+        if (screen.height<= 1000) {document.write("<style>.centerLOGO{zoom:75%;} .player{zoom:75%;}</style>")}; 
+        if (screen.width<= 550) {document.write("<style>.centerLOGO{zoom:70%;} body{zoom:82%} video{display: none;}</style>")};
+        if (screen.width<= 1000) {document.write("<style>.centerLOGO{zoom:75%;} .player{zoom:75%;}</style>")}; 
+        if (screen.width>= 2500) {document.write("<style>body{zoom:150%;}</style>")}; */
+        
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ .hide(HTMLVideoElement)
+}
+    </SCRIPT> 
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+
+   	<div class="player">
+         <video autoplay loop muted = "muted">
+            <source src="https://d3ga7i2xn81pzq.cloudfront.net/images/earth_video.webm" type="video/webm">
+            <source src="https://d3ga7i2xn81pzq.cloudfront.net/images/earth_video.mp4" type="video/mp4">
+         </video>
+ 
+   
+    <div class="TopContainer"> <div class="rester"></div><div class="centerLOGO"> <img class="center" src="spaceapps_04.png" width="350px" height="350px" /> <H2 class="textcenter">Space Apps Next Gen II. Coming this Summer</H2>  <h3 class="textcenter">  LEARN. CODE. CHANGE THE WORLD.</h3> 
+    <a class="btn typeform-share" href="#" 
+       > Registration is Closed  </a></div>
+        </div> 
+    </div>
+   
+
+<!--    
+    <a class="typeform-share button" href="https://liorogamerdvd.typeform.com/to/hDRl1P" data-mode="1" target="_blank">Launch me!</a>
+
+
+    <!-- Intro Header -->
+<!--<header class="intro">
+       <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="brand-intro"> Welcome to</h3>
+                        <h2 class="">New York City's First Highschool</h2>
+                        <h1 class="">SPACE APPS </h1>
+                        <h3 class=""><br>
+                        Learn to Code. Change the world. </h3>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </header>
+-->
+    <!-- About Section -->
+    <!--
+><div class="statistics" id="stats"><div class="row"><div class="container"><div class="col-md-3 fact"><h1 class="numbers">1,000</h1><h2 class="object">HS Hackers</h2></div><div class="col-md-3 fact"><h1 class="numbers">36</h1><h2 class="object">Hours</h2></div><div class="col-md-3 fact"><h1 class="numbers">2016</h1><h2 class="object">Summer</h2></div><div class="col-md-3 fact"><h1 class="numbers">1</h1><h2 class="object">Amazing Event</h2></div></div></div></div>    
+    -->
+    
+    
+<div id="bottomcontainer">
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2" id="about">
+                <h2>About Space Apps Next Gen</h2>
+                        <p> 
+                        Space Apps Next Gen was the first two-day high school space hackathon where teams of diverse populations of students from the Greater New York City Area learned, collaborated, and engaged with publicly available data to solve real world scientific challenges.  The event brought together ~200 mentors and participants and exposed 150+ students to the powerful fusion of data and programming with science, tapping their potential to solve the problems of tomorrow. <br /> <br />
+                        Space Apps Next Gen will be going international in 2016! If you'd be interested in hosting a Next Gen event in your city, email us!<a href="mailto:contact@hsspaceapps.com"> contact@spaceappsnextgen.com</a>!
+                
+                        
+                        </p>
+                        
+                        <p>
+                            Check out our <a href= "http://bit.ly/nycnextgen"> liveblog </a> from last year's NYC event!
+                
+                
+                </p>
+                
+            </div>
+        </div>
+    </section>
+               
+               
+<hr />
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                
+                        
+                        
+                        
+                <h2>Where?
+                </h2>        
+                <p>Space Apps Next Gen took place at the <a href="http://LMHQ.nyc">Lower Manhattan Headquarters.</a> We were located on the 20th floor of 150 Broadway, New York NY!
+                   <br />
+                   (LMHQ is 3 blocks from the Fulton Street Subway Station! You can get here on the <img src="trains.png"> lines!</img> )
+                    
+                    
+                    
+                </p>
+                
+                <h2>
+                    When?
+                    
+                </h2>
+                <p>Space Apps Next Gen took place  on the 29th and 30th of August in 2015. The full event lasted from 12:00PM on the 29th to 3:00PM on the 30th, and hacking lasted approximately 24 hours. 
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+       <div class="backpic">
+        <div class="download-section  darken-container">
+            <div class="container register">
+                    
+
+                    <div class="page-section" id="faq">
+                        <div class="container">
+                <h2 class=" ">FAQ</h2>
+
+                <div class="q-container">
+                    <h3 class="question"><b>What is a hackathon?</b></h3>
+                    <p class="answer">A hackathon is an event in which teams spend the weekend building something awesome (and then demo it). Space Apps Next Gen NYC is open to anyone, from the absolute beginner to the professional hacker. Check out Dave Fontenot's post on <a href="//medium.com/hackathons-anonymous/3d5413601c05">"What is a hackathon?"</a></p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>What if I don't know how to code?</b></h3>
+                    <p class="answer">There is absolutely nothing wrong with that! Hackathons provide an awesome opportunity for people to learn how to code. Even if you have never programmed before in your life, we will help you get started with the basics of programming and hopefully by the end of the hackathon, you will leave with a working application!</p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>What should I bring? How much does this event cost?</b></h3>
+                    <p class="answer">You should bring your laptop (we won't provide computers) and charger, school ID, phone and charger, and power strips <i>(recommended)</i>. Food will be provided! This event costs absolutely nothing!</p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>Who can attend and how do the teams work?</b></h3>
+                    <p class="answer">Any students in high school can attend! You do not have to be from the US. If you need help convincing your parents, contact us.. You can work individually or with a team (with a suggested maximum of 4 hackers). For more information, check out our <a href="http://www.spaceappsnextgen.com/rules" id="light">rules.</a></p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>I know a company that wants to sponsor, what should I tell them?</b></h3>
+                    <p class="answer">Great! Tell them to contact us at <a href="mailto:contact@hsspaceapps.com">contact@spaceappsnextgen.com</a></p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>Can I be a mentor at Space Apps Next Gen NYC?</b></h3>
+                    <p class="answer">Definitely! Simply click the registration button above and enter your information to be registered. Then send us an email at <a href="mailto:contact@hsspaceapps.com">contact@spaceappsnextgen.com</a> and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <div class="q-container">
+                    <h3 class="question"><b>How will teams be put together?</b></h3>
+                    <p class="answer">You can join a team on the day of the event based on your interest in a particular challenge or a match of skills. Mentors at the event can help you to find the right team for you. You are also welcome to form your team in advance and come to the event together.</p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>Is the event limited to just software development?</b></h3>
+                    <p class="answer"> Absolutely not! We need people with all types of skills to participate in the International Space Apps Challenge! Teams need project managers, designers, artists, educators, writers - anyone who can help advance the cause. You can definitely contribute! Participants in the event will collaborate to build software, open hardware, data visualization, and citizen science platform solutions that contribute to space exploration and solve global challenges that focus on improving life on earth. In fact, most teams will benefit from having non-programmers working with them.</p>
+                </div>
+                <div class="q-container">
+                    <h3 class="question"><b>Since the event is called Space Apps, do the solutions need to be applications?</b></h3>
+                    <p class="answer">In spite of the name, it is not just about APPS! The three challenges involve robotics, data visualization, hardware, design, and many other elements!</p>
+                </div>
+                
+                
+                
+                
+                
+                <div class="q-container">
+                    <h3 class="question"><b>I have another question! How should I ask?</b></h3>
+                    <p class="answer">If you have any other questions, don't hesitate to contact us at <a href="mailto:contact@spaceappsnextgen.com">contact@spaceappsnextgen.com.</a> Additionally, check out our rules at <a href="http://www.spaceappsnextgen.com/rules">spaceappsnextgen.com/rules</a>.</p>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+                    </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    
+
+<section>
+      <div class="container">
+        <h2 class="title">2015 Challenges</h2>
+          <row class="margin-top">
+           <div class="col-md-4">
+            <h1>DATA TREASURE HUNTING
+            </h1>
+            <p>
+                Create an app, data aggregator, or clever visualization of open NASA data in a meaningful way to educate and involve the public with the trends and information NASA has collected. Use open data to map clean water, changes in forest cover, global temperature averages, airburst threats, asteroid locations in our solar system, or any other interesting visualization one can develop with NASA's extensive datasets. Be creative!
+                <h4>RESOURCES:</h4>
+         <a href="http://data.nasa.gov/">http://data.nasa.gov/</a>  <br>
+         <a href="http://open.nasa.gov/">http://open.nasa.gov/</a>  <br>
+         <a href="http://neo.sci.gsfc.nasa.gov/"> NASA Earth Observations Data </a> <br>
+                      <!--<h4 class="margin-topp">Prizes: TBD</h4>-->
+            </p>
+            <!-- Create data aggregators and visualizations of open NASA data in meaningful ways that can educate and involve the public with the science and trends within the numbers.-->
+            
+    </div>
+            <div class="col-md-4">
+            
+            
+            <h1>SENSOR YOURSELF
+            </h1><br>
+            <p>
+                   Build something that can allow robots or astronauts to navigate through a potentially hazardous obstacle course relying solely on sensor data. Put together a stream of applicable sensor data of your choice to guide forward movement or gauge when to stop based on danger or impediments. Feel free to attach other sensors onto an autonomous robot or astronaut guide to collect data from environments like the International Space Station.
+                <h4>RESOURCES:</h4>
+         <a href="http://www.nasa.gov/spheres">NASA SPHERES Program</a>  <br>
+         <a href="http://www.nasa.gov/centers/johnson/techtransfer/technology/sensors.html">Robotic Sensors</a>  <br>
+         <a href="http://www.nasa.gov/directorates/heo/scan/communications/outreach/funfacts/txt_passive_active.html"> Passive and Active Sensors</a> <br>
+                   <a href="http://www.nasa.gov/mission_pages/station/research/experiments/690.html"> International Space Station SPHERES-Zero-Robotics Experiment</a> <br>
+                      <!--<h4 class="margin-topp">Prizes: TBD</h4>-->
+    </div>
+                
+            </p>
+            
+            <div class="col-md-4">
+            <h1>CREATE YOUR OWN
+            </h1><br>
+            <p class="">
+                   Have an idea for an app or game that can educate and engage the public with NASA's mission and promote civilian science? Are you interested in developing an interactive tool to leverage NASA audio files from space missions in new and innovative ways? Do you want to develop a new type of 3D printed space food? As long as it relates to space science or is an innovative solution to a problem your team can solve, create your own 'Space App'! 
+                <h4>RESOURCES:</h4>
+         <a href="http://geo.pds.nasa.gov/">Geosciences Node of NASA's Planetary Data System (PDS)</a>  <br>
+         <a href="https://archive.org/details/nasaaudiocollection">NASA's Audio Archives</a>  <br>
+         <a href="http://nasa3d.arc.nasa.gov/"> NASA's 3D Printing Repository </a> <br>
+                      <!--<h4 class="margin-topp">Prizes: TBD</h4>-->
+                
+                
+            </p>
+    </div>
+    </row>
+    
+</section>
+       
+           
+               
+                   
+                       
+                           <hr >    
+    
+    
+    
+<section id="schedule">
+        <div class="page-section" >
+            <div class="container">
+    <h2 class="title">2015 Schedule</h2>
+    <div class="schedule-container">
+
+        <div class="col-md-6 thick">
+            <h1 class="day">Saturday, August 29th</h1>
+            <div class="row">
+                <h3 class="time">12:00 PM - </h3>
+                <p class="description">Registration and Lunch <span class="g">Starts on the 20th Floor of LMHQ </span></p>
+            </div>
+            <div class="row">
+                <h3 class="time">1:00 PM - </h3>
+                <p class="description">Opening Ceremony<br /><span class="g"> Challenges, Kickoff, and Speakers</span><br> 
+                    <span class="g"> (Including <a href="http://www1.nyc.gov/site/forward/about/about.page">Minerva Tantoco </a>, New York City's CTO and Head of the Mayors Office of Tech and Innovation!) </span></p>
+            </div>
+            <div class="row">
+                <h3 class="time">2:00 PM - </h3>
+                <p class="description">Hacking Begins</p>
+            </div>
+            <div class="row"> 
+                <h3 class="time">2:30 PM - </h3>
+                <p class="description g">Intro to HTML &amp; CSS Workshop by <a href="http://cassidoo.co/">Cassidy Williams</a> @ Main Event Space</p>
+            </div>
+            <div class="row"> 
+                <h3 class="time">4:00 PM - </h3>
+                <p class="description g">Introduction to Web APIs by <a href="http://camiwilliams.me/">Camryn Williams</a> @ Main Event Space</p>
+            </div>
+            <div class="row">
+                <h3 class="time">5:00 PM - </h3>
+                <p class="description g">Intro to Working with Data APIs by Socrata's <a href="http://chrismetcalf.net/">Chris Metcalf </a> @ Main Event Space</p>
+            </div>
+            <div class="row">
+                <h3 class="time">6:00 PM - </h3>
+                <p class="description g">Intro to Data Analysis with Python by Charles Summers and Oliver Belanger @ Main Event Space </p>
+            </div>
+            <div class="row">
+                <h3 class="time">7:15 PM - </h3>
+                <p class="description">Dinner</p>
+            </div>
+
+            <div class="row">
+                <h3 class="time">8:00 PM - </h3>
+                <p class="description g">Intro to Web Development (Flask) </p>
+            </div>
+            <div class="row">
+                <h3 class="time">8:30 PM - </h3>
+                <p class="description g">Putting Your Website on the Internet @ Tesla Room</p>
+            </div>
+            <div class="row">
+                <h3 class="time">8:30 PM - </h3>
+                <p class="description g">Hardware Hacking Essentials @ Main Event Space @ </p>
+            </div>
+            <div class="row">
+                <h3 class="time">9:15 PM - </h3>
+                <p class="description g">Interactive Data Visualization for the Web by <a href="https://github.com/sivulka"> George Sivulka</a> @ Main Event Space</p>
+            </div>
+
+            
+        </div>
+        <div class="col-md-6">
+            <h1 class="day">Sunday, August 30th</h1>
+            <div class="row">
+                <h3 class="time">12:00 AM - </h3>
+                <p class="description">Midnight Snack!</p>
+            </div>
+            
+             <div class="row">
+                <h3 class="time">9:00 AM - </h3>
+                 <p class="description g">How to Successfully Pitch a Hack by HackerFund's <a href="http://www.hacker.fund/">Justin Brezhnev</a></p>
+            </div>
+	    <div class="row">
+		<h3 class="time">10:00 AM - </h3>
+            <p class="description">Brunch</p></div>
+            <div class="row">
+                <h3 class="time">12:00 PM - </h3>
+                <p class="description">Hacking Ends and Projects must be submitted to <a href="http://spaceappsnextgen.devpost.com">Dev Post</a></p>
+            </div>
+            <div class="row">
+                <h3 class="time">12:30 PM - </h3>
+                <p class="description">Demos Begin and Judging Commences</p>
+            </div>
+            <div class="row">
+                <h3 class="time">2:00 PM - </h3>
+                <p class="description">Demos End</p>
+            </div>
+            <div class="row">
+                <h3 class="time">2:30 PM - </h3>
+                <p class="description"> Winners Announced and Closing Ceremony</p>
+            </div>
+            
+            <div class="row">
+                <h3 class="time">3:00 PM - </h3>
+                <p class="description"> Event ends</p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>    
+    <hr />
+
+
+ <section>
+        <div class="page-section" id="guests">
+            <div class="container">
+    <h1 class="title">Last Year's Special Guests</h1>
+    <div class="guests">
+        <div class="row row-centered">
+            <div class="guest col-md-4 col-sm-6">
+                <a href="http://www1.nyc.gov/site/forward/about/about.page" target="_blank"><img class="round" src="/mt.png"></a>
+                <h3 class="sbot smtop">Minerva Tantoco</h3>
+                <p class="sbot">Keynote Speaker</p>
+                <p class="">CTO of the City of New York <br> <a href="http://www1.nyc.gov/site/forward/about/about.page" target="_blank">Mayor's Office of Tech and Innovation</a></p>
+            </div>
+            <div class="guest col-md-4 col-sm-6">
+                <a href="http://nasa.gov" target="_blank"><img class="round" src="dg.jpg"></a>
+                <h3 class="sbot smtop">Danielle Gervalis</h3>
+                <p class="sbot">Judge</p>
+                <p class="">Digital Strategist at NASA <br> <a href="http://nasa.gov" target="_blank">National Aeronautics and Space Administration</a></p>
+            </div>
+            <div class="guest col-md-4 col-sm-6">
+                <a href="http://www.amnh.org/learn-teach/adults/bridgeup-stem" target="_blank"><img class="round" src="jb.jpg"></a>
+                <h3 class="sbot smtop">Jillian Bellovardy</h3>
+                <p class="sbot">Judge</p>
+                <p class="">Astrophysist &amp; Helen Postdoctoral Fellow  at <a href="http://amnh.org" target="_blank">The American Museum of Natural History</a> <!-- / <a href="http://www.amnh.org/learn-teach/adults/bridgeup-stem"> BridgeUp: STEM</a></p> -->
+            </div>
+        <div class="row row-centered">
+             <div class="guest col-md-4 col-sm-6">
+                <a href="http://socrata.com" target="_blank"><img class="round" src="cm.jpg"></a>
+                <h3 class="sbot smtop">Chris Metcalf</h3>
+                <p class="sbot">Judge</p>
+                <p class="">Director of Developer Experience at  <a href="http://socrata.com" target="_blank">Socrata</a></p>
+            </div>
+            <div class="guest col-md-4 col-sm-6">
+                <a href="http://cassidoo.co/" target="_blank"><img class="round" src="/cw.jpg"></a>
+                <h3 class="sbot smtop">Cassidy Williams</h3>
+                <p class="sbot">Judge</p>
+                <p class="">Software Engineer &amp; Developer Evangelist at   <a href="http://www.clarifai.com/" target="_blank">Clarifai </a></p>
+            </div>
+            <div class="guest col-md-4 col-sm-6">
+                <a href="http://aaron.jorb.in/" target="_blank"><img class="round" src="/aj.jpg"></a>
+                <h3 class="sbot smtop">Aaron Jorbin</h3>
+                <p class="sbot">Judge</p>
+                <p class="">  <a href="http://aaron.jorb.in/" target="_blank">Wordpress </a> Core Developer </p>
+            </div>
+<!--             <div class="guest col-md-3 col-sm-6">
+                <a href="http://www.launchsummer.org" target="_blank"><img src="/static/img/guests/laurie_stach.jpg"></a>
+                <h3 class="name">Laurie Stach</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Program Manager of High School Education, <a href="http://entrepreneurship.mit.edu/" target="_blank">Martin Trust Center for MIT Entrepreneurship</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <img src="/static/img/guests/eliot_horowitz.jpg">
+                <h3 class="name">Eliot Horowitz</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Cofounder of <a href="http://www.mongodb.org/" target="_blank">MongoDB</a></p>
+            </div>
+            <div class="guest col-md-3 col-sm-6">
+                <img src="/static/img/guests/alex_iskold.jpeg">
+                <h3 class="name">Alex Iskold</h3>
+                <p class="role">Judge</p>
+                <p class="desc">Managing Director at <a href="http://www.techstars.com/" target="_blank">Techstars NYC</a></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+ <hr />
+
+
+
+<section id="sponsors">
+<div class="container">
+<h2> Previously Powered by:</h2>
+<img class="mw" src="sponsors4.png" alt="" usemap="#Map1" />
+<map name="Map1" id="Map1">
+    <area alt="" title="" href="http://lmhq.nyc" shape="poly" coords="58,72,56,326,273,333,276,46" />
+    <area alt="" title="" href="http://touchlab.co" shape="poly" coords="303,28,287,389,689,389,703,25" />
+    <area alt="" title="" href="http://socrata.com" shape="poly" coords="721,66,708,331,935,330,944,60" />
+    <area alt="" title="" href="http://moxtra.com" shape="poly" coords="71,411,57,566,522,571,530,421" />
+    <area alt="" title="" href="http://ebay.com" shape="poly" coords="555,417,555,568,890,580,905,408" />
+    <area alt="" title="" href="http://bluestampengineering.com" shape="poly" coords="20,605,12,784,468,781,474,602" />
+    <area alt="" title="" href="http://stickermule.com" shape="poly" coords="495,595,491,785,789,782,794,588" />
+    <area alt="" title="" href="http://wolfram.com" shape="poly" coords="803,609,817,771,968,769,970,594" />
+    <area alt="" title="" href="http://toptal.com" shape="poly" coords="23,827,2,958,274,965,280,834" />
+    <area alt="" title="" href="http://weare.ci" shape="poly" coords="295,811,292,1000,492,995,503,815" />
+    <area alt="" title="" href="http://teamtreehouse.com" shape="poly" coords="530,812,501,1017,718,1009,700,816" />
+    <area alt="" title="" href="http://wolfram.com" shape="poly" coords="761,802,728,996,997,990,977,800" />
+    <area alt="" title="" href="http://hacker.fund" shape="poly" coords="156,1045,106,1168,464,1167,463,1063" />
+    <area alt="" title="" href="http://www1.nyc.gov/site/forward/index.page" shape="poly" coords="476,1066,491,1159,859,1159,854,1045" />
+
+</map>
+
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+<section>
+    <div class="page-section" id="sponsors">
+    <div class="container">
+          <div class="cover">
+            <div class="content">
+                <h2 class="">Powered By:</h2>
+                <div class="row cohost-row row-centered">
+                    <a href="https://lmhq.nyc/" target="_blank">
+                        <div class="col-md-3 col-sm-6 col-xs-12 sponsor"  style="background: url(/sponsors/LMHQ.png);"></div>
+                    </a>
+            	</div>
+                <div class="row">
+                   
+                    <div class="row">
+                        <a href="http://makeschool.com/" target="_blank">
+                            <div class="col-md-3 sponsor hover-fade" style="background: url(/sponsors/LMHQ.png);"></div>
+                        </a>
+                        <a href="http://flatironschool.com/" target="_blank">
+                            <div class="col-md-3  sponsor hover-fade" style="background: url(/sponsors/LMHQ.png);"></div>
+                        </a>
+                        <a href="http://ebay.com/" target="_blank">
+                            <div class="col-md-3 sponsor hover-fade" style="background: url(/sponsors/LMHQ.png);"></div>
+                        </a>
+                        <a href="http://wolfram.com/" target="_blank">
+                            <div class="col-md-3 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/wolfram.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="http://www.goldmansachs.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/goldmansachs.png);"></div>
+                        </a>
+                        <a href="https://minerva.kgi.edu/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/minerva.png);"></div>
+                        </a>
+                        <a href="https://twilio.com" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/twilio.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://roughdraft.vc/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/roughdraft.png);"></div>
+                        </a>
+                        <a href="https://sendgrid.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/sendgrid.png);"></div>
+                        </a>
+                        <a href="https://www.janestreet.com/" target="_blank"> 
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/janestreet.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://shapeways.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/shapeways.png);"></div>
+                        </a>
+                        <a href="http://www.undergroundshirts.com" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/ugp.png);"></div>
+                        </a>
+                        <a href="http://www.lenovo.com/" target="_blank">
+                            <div class="col-md-3 col-sm-4 col-xs-7 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/lenovo.png);"></div>
+                        </a>
+                    </div>
+                </div>
+            	<div class="row small-sponsor-row">
+                    <div class="row row-centered">
+                        <a href="http://weare.ci" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/ci.png);"></div>
+                        </a>
+                        <a href="https://mozilla.org" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/mozilla.png);"></div>
+                        </a>
+                        <a href="http://genius.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/genius.png);"></div>
+                        </a>
+                        <a href="https://getpebble.com/" taget="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/pebble.png);"></div>
+                        </a>
+                        <a href="https://leangap.com/" taget="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/leangap.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://www.stickermule.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/stickermule.png);"></div>
+                        </a>
+                        <a href="https://filepicker.io" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/filepicker.png);"></div>
+                        </a>
+                        <a href="https://dropbox.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/dropbox.png);"></div>
+                        </a>
+                        <a href="https://teamtreehouse.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/treehouse.png);"></div>
+                        </a>
+                        <a href="http://www.techdayhq.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/tdhq.png);"></div>
+                        </a>
+                    </div>
+                    <div class="row row-centered">
+                        <a href="https://generalassemb.ly/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/generalassembly.png);"></div>
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/github.png);"></div>
+                        </a>
+                        <a href="http://www.lob.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/lob.png);"></div>
+                        </a>
+                        <a href="http://www.startupvitamins.com/" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/startupvitamins.png);"></div>
+                        </a>
+                        <a href="http://garysguide.com" target="_blank">
+                            <div class="col-md-2 col-sm-2 col-xs-4 sponsor hover-fade" style="background: url(/static/img/sponsor-logos/garysguide.png);"></div>
+                        </a>
+                    </div>
+            	</div> 
+                <div class="row partners row-centered">
+                    <h2 class="col-md-12 center">In Partnership with:</h2>
+                    <a href="https://lmhq.nyc/" target="_blank">
+                        <div class="col-md-3 col-sm-6 col-xs-12 sponsor"  style="background: url(/sponsors/LMHQ.png);"></div>
+                    </a>
+                </div>
+                <div class="contact">
+                    <h3 class="centered"><a href="mailto:contact@hackbca.com" id="dark">Interested in Sponsoring?</a></h3>
+
+                </div>
+              </div></div></div>
+    </div>
+</section>
+-->
+
+
+<!--
+
+   
+<section id="sponsors">
+    <div class="container">
+        <h2>POWERED BY:</h2>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sponsor">
+                    <a href="http://lmhq.nyc"> <img src="LMHQ.png"></img> </a>
+                </div>
+            </div>
+        </div>
+    <br>
+       
+
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="sponsor">
+                    <a href="http://ebay.com"> <img src="ebay.png"></img> </a>
+                </div>
+            </div>
+                
+            <div class="col-md-6">
+                <div class="sponsor">
+                    <a href="http://socrata.com"> <img src="soc.png"></img> </a>
+                </div>
+            </div>
+                
+        </div>
+
+
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sponsor">
+                    <a href="http://stickermule.com"> <img src="sm.png"></img> </a>
+                </div>
+        </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="">
+                    <a href="http://www1.nyc.gov/site/forward/index.page"> <img src="mo.png"></img> </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="sponsor">
+                    <a href="http://hacker.fund"> <img src="img/HF.png"></img> </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section> -->
+<!-- Map Section -->
+<div id="map"></div>    
+
+<footer >
+  <div class="inner" id="sponsors">
+      <!--<h1 class="text-center">POWERED BY </h1>
+    <div class="sponsors">
+        <h2>Intergalactic Sponsor</h2>
+        <ul class="cf">
+            <li>
+              <a href="http://www.microsoft.com/" target="_blank">
+                  <img src="img/blank_med.png" alt="Microsoft" />
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="img/blank_med.png"  alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="img/blank_med.png"  alt="" />
+              </a>
+            </li>
+        </ul>
+        <h2>Interstellar Sponsors</h2>
+        <ul class="cf">
+            <li>
+              <a href="http://www.ibm.com/" target="_blank">
+                  <img src="img/blank_med.png"  alt="IBM" />
+              </a>
+            </li>
+            <li>
+              <a href="http://www.socrata.com/" target="_blank">
+                  <img src="img/blank_med.png"  alt="Socrata" />
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="img/blank_med.png" alt="" />
+              </a>
+            </li>
+        </ul>
+      <h2>Supernova Sponsors</h2>
+      <ul class="cf">
+          <li>
+            <a href="http://www.about.com/" target="_blank">
+                <img src="img/blank_med.png"  alt="About.com" />
+            </a>
+          </li>
+          <li>
+            <a href="http://touchlab.co/" target="_blank">
+               <img src ="img/blank_med.png"  alt="Touch Lab"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.twilio.com/" target="_blank">
+                <img src="img/blank_med.png"  alt="Twilio" />
+            </a>
+          </li>
+      </ul>
+      <ul class="cf">
+          <li>
+            <a href="http://www.doubledutch.me/" target="_blank" >
+                <img src ="img/blank_med.png"  alt="DoubleDutch"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.mashery.com/" target="_blank">
+              <img src="img/blank_med.png"  alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="http://www.sparkpost.com/" target="_blank">
+              <img src="img/blank_med.png"  alt="" />
+            </a>
+          </li>
+      </ul>
+    </div> -->
+     
+     
+        <div class="darken-container" id="contact1">
+            <div class="container">
+                <h1 class="title">Stay Tuned</h1>
+                <div class="1row">
+                
+                        <a href="https://twitter.com/SpaceAppsNextG"><i class="socials fa fa-twitter-square fa-4x"></i></a>
+                 
+
+        
+                        <a href="https://www.facebook.com/spaceappsnextgen"><i class="socials fa fa-facebook-square fa-4x"></i></a>
+                        <h3 class="margin-topp">#spaceappsnextgen</h3>
+             
+                </div>
+            </div>
+        </div>
+     
+     
+     
+     
+     
+     
+      <p id="contact"> <span class="bold"> SPACE APPS IS A NASA INNOVATION INCUBATOR PROGRAM  </span> <i><br /> //Disclaimer: NASA is in no way partnered with the sponsors listed above </i></p>
+   <p>ORGANIZERS: George Sivulka, Olivia Ross, Drew Rosowicz, Liam Rahav, Max Maleno, Rachel Friedman, Hyobin Im, &amp; Kenneth Rhee  </p><br>
+      <p>2015 LOCATION: 150 BROADWAY, NEW YORK, NY USA   /   (201) 681-8576   /   <a class="white" href="mailto:contact@spaceappsnextgen.com" target="_blank">CONTACT@SPACEAPPSNEXTGEN.COM</a></p>
+      <p class="collab"> </p>
+  </div>
+</footer>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    </div>
+</body>
+
+</html>
