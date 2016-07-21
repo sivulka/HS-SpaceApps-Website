@@ -360,7 +360,7 @@ a:focus {
 
 .backpic{
 
- background: url(../img/satellite1.jpg) no-repeat center center scroll;   
+ background: url(../img/Cover.jpg) no-repeat center center scroll;   
     background-size:cover;
     
 }
@@ -423,7 +423,7 @@ padding-top:20px;
     color: white;
     background-color: transparent;       width:250px;  height:auto;  margin-right: auto;   margin-left: auto; 
 
-  width: 250px;
+  width: 500px;
   height: auto;
   padding: 10px 23px;
   border: 1px solid white;
@@ -1109,4 +1109,9 @@ margin-bottom:80px !important;
     
  margin-top:80px;   
     
+}
+
+.COMING-SOON{
+    
+    font-size: 450%;
 }
